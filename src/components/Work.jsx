@@ -1,0 +1,138 @@
+import React from "react";
+import clock from "../assests/clock.png";
+import dictionaryapp from "../assests/dictionaryapp.png";
+import reactweather from "../assests/reactweather.png";
+
+const Work = () => {
+  return (
+    <div className="w-full md:h-screen bg-[#113f67] text-[#ccd6f6]">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 text-grey-300 border-pink-600">
+            Work
+          </p>
+          <p className="py-6">Check out some of my recent work</p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div
+            style={{ backgroundImage: `url(${reactweather})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md 
+              flex justify-center text-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100 ">
+              <span className="text-2xl font bold text-white tracking-wider ">
+                My Projects from SheCodes Workshops
+              </span>
+              <div className="pt-8 text-center ">
+                <a
+                  href="https://weather-search-react-eh.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Demo
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/EmmaH88/weather-app-react"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{ backgroundImage: `url(${clock})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md 
+              flex justify-center text-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100 ">
+              <span className="text-2xl font bold text-white tracking-wider ">
+                My Projects from SheCodes Workshops
+              </span>
+              <div className="pt-8 text-center ">
+                <a
+                  href="https://my-world-clock1.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/EmmaH88/World-Clock"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{ backgroundImage: `url(${dictionaryapp})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md 
+              flex justify-center text-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100 ">
+              <span className="text-2xl font bold text-white tracking-wider ">
+                My Projects from SheCodes Workshops
+              </span>
+              <div className="pt-8 text-center ">
+                <a
+                  href="https://my-dictionary-react.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/EmmaH88/dictionary-react"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Work;
